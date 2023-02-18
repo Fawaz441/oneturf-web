@@ -1,0 +1,16 @@
+import React from 'react'
+import clsx from 'classnames'
+
+const Button = ({ onClick, type = "button", text, className }) => {
+    return (
+        <button type={type}
+            {...onClick && { onClick }}
+            className={clsx("h-[54px] rounded-[30px] bg-primary text-white font-medium text-base border-none outline-none", className)}
+        >
+            {text}
+        </button>
+
+    )
+}
+
+export default Button
