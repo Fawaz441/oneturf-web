@@ -1,10 +1,10 @@
 import Invitation from "pages/users/Invitation";
 import NotFound from "pages/utils/NotFound";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createHashRouter } from "react-router-dom";
 import { pageRoutes } from "utils/constants";
 
 const Routes = () => {
-    const router = createBrowserRouter([
+    const router = createHashRouter([
         { path: pageRoutes.invitation.default, element: <Invitation /> },
         { path: "*", element: <NotFound /> },
     ])
