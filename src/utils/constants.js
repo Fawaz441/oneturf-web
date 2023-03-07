@@ -1,5 +1,8 @@
 export const pageRoutes = {
-    invitation: {
-        default: "/invitation"
-    }
+	invitation: {
+		default: "/invitation"
+	},
+	registration: {
+		default: "/registration"
+	}
 }
