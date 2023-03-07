@@ -16,7 +16,7 @@ const Invitation = () => {
 	return (
 		<Wrapper>
 			<div className='bg-white flex pt-[11vh] justify-center mb-5'>
-				<div className='w-[577px] shadowed bg-white relative'>
+				<div className='w-full mx-auto md:w-[577px] shadowed bg-white relative'>
 					<div className='h-[168px] relative pt-[50px] pl-[47px]'>
 						<img src={home} alt="home" className="object-cover absolute h-full w-full left-0 top-0" />
 						<div className="absolute h-full w-full left-0 top-0 bg-[#5F5F5F]/[.6]" />
@@ -34,20 +34,20 @@ const Invitation = () => {
 						<div className='flex space-x-[43.89px] items-center'>
 							<div className="flex items-center space-x-[10px]">
 								<PlayStore />
-								<div className='flex flex-col'>
+								<div className='md:flex flex-col hidden'>
 									<h4 className='text-[8px]  font-medium text-white'>Download on</h4>
 									<h2 className='text-base  font-medium text-white'>Playstore</h2>
 								</div>
 							</div>
 							<div className="flex items-center space-x-[10px]">
 								<AppStore />
-								<div className='flex flex-col'>
+								<div className='md:flex flex-col hidden'>
 									<h4 className='text-[8px]  font-medium text-white'>Download on</h4>
 									<h2 className='text-base  font-medium text-white'>App Store</h2>
 								</div>
 							</div>
 						</div>
-						<div className='hidden md:flex items-center space-x-4'>
+						<div className='items-center space-x-4 flex'>
 							<Instagram />
 							<Twitter />
 							<Facebook />
