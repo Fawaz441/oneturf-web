@@ -1,4 +1,4 @@
-import { AdminLogin, AdminOutlet } from "pages/administration"
+import { AdminLogin, AdminOutlet, Dashboard } from "pages/administration"
 import { LocationForm, OccupantsForm, UsersOutlet, PersonalForm, Invitation, SuccessfulRegistration } from "pages/users"
 import NotFound from "pages/utils/NotFound"
 import {
@@ -21,14 +21,14 @@ const AppRoutes = () => {
         },
         {
             path: "/administration", element: <AdminOutlet />, children: [
-                { path: "", element: <AdminLogin /> }
+                { path: "", element: <AdminLogin /> },
+                { path: "dashboard", element: <Dashboard /> },
             ]
         },
         { path: "*", element: <NotFound /> }
     ])
     return (
         <RouterProvider router={router} />
-        // <Invitation />
     )
 }
 

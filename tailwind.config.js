@@ -14,7 +14,8 @@ module.exports = {
         extraBlue: "#2651EA",
         border: "#E5E5E5",
         dark: "#231F1F",
-        input: "#F3F3F8"
+        input: "#F3F3F8",
+        inactive: "#7C7C7C"
       },
       fontSize: {
         "30": "30px",
