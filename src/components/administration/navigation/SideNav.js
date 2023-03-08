@@ -23,7 +23,7 @@ const SideNav = () => {
                         to={route.to}
                         key={index} className={({ isActive }) => clsx("fill-inactive h-[38px] border-r-[5px] border-r-[transparent] flex items-center text-inactive",
                             { "!fill-primary !text-primary !border-r-primary": isActive })}>
-                        <div className='h-6 w-6 mr-5 flex justify-center'>
+                        <div className='h-6 w-6 mr-5 flex justify-center items-center'>
                             {route.icon}
                         </div>
                         <span className='font-semibold text-base'>{route.text}</span>
